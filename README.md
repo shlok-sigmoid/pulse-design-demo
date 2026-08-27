@@ -37,4 +37,4 @@ Open http://localhost:8080. No install, no build — the pages are plain HTML.
 - No prose walls, no spinners on AI surfaces, no marketing copy that sounds generated.
 - A review gate: nothing counts as done until a non-author pass walks the checklist against the running screen.
 
-The full document is `.claude/skills/design-plan/references/design.md` (v1.6).
+The full document (v1.6) lives at `.claude/skills/design-plan/references/`, split into one file per section — `00-index.md` maps what lives where.
