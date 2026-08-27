@@ -1,11 +1,11 @@
 ---
 name: design-plan
-description: The organization's canonical frontend design system (bundled design.md v1.6) — colors, typography, surfaces, component recipes, motion, voice, content-density rules, and a mandatory review gate. Use this skill whenever building, styling, restyling, reviewing, or fixing ANY frontend UI — a screen, page, component, modal, dashboard, form, landing page, chart, or empty state — in any project, even if the user never says "design system" or "design.md". Also use it when starting a new frontend project (it bootstraps the whole system) and when deciding whether UI work is "done" (it defines the review gate that gates done).
+description: The organization's canonical frontend design system (v1.6, bundled split per section under references/) — colors, typography, surfaces, component recipes, motion, voice, content-density rules, and a mandatory review gate. Use this skill whenever building, styling, restyling, reviewing, or fixing ANY frontend UI — a screen, page, component, modal, dashboard, form, landing page, chart, or empty state — in any project, even if the user never says "design system" or "design.md". Also use it when starting a new frontend project (it bootstraps the whole system) and when deciding whether UI work is "done" (it defines the review gate that gates done).
 ---
 
 # Design Plan — the canonical design system
 
-Every visual decision derives from the bundled document, `references/design.md` (v1.6). It travels as law, not inspiration: when this skill is active, **all UI designs from that document by default and nothing is skipped — no exceptions.** A screen that ignores a section of the document is a defect, not a variation. The bundled copy is the authority this skill enforces, everywhere it runs.
+Every visual decision derives from the bundled design document (v1.6), which ships split into one file per section under `references/` — `00-index.md` maps what lives where. It travels as law, not inspiration: when this skill is active, **all UI designs from that document by default and nothing is skipped — no exceptions.** A screen that ignores a section of the document is a defect, not a variation. The bundled copy is the authority this skill enforces, everywhere it runs. The split exists for token economy: read only the section files the task needs, never the whole set out of habit.
 
 ## On direct invocation (`/design-plan` with no task)
 
@@ -24,30 +24,37 @@ When the user types `/design-plan` without naming a task, do NOT start any work 
   - *Nothing found:* say so, then run the §12 bootstrap directly — no overwrite warning, no prompts at all.
   - *One found:* show a preview — what will be replaced, what stays — and proceed only on an explicit confirmation, recommending a git commit/branch first.
   - **After that, the sweep runs unattended — one decision, whole project.** Enumerate every screen and component from the router and pages/components directories, then migrate ALL of them to the design plan in one pass: tokens, type, surfaces, full-width containers (§5.1), responsive behavior (§5.3), density (§11). Never stop to ask "now the login screen?" or "shall I do the dashboard next?" — the user already decided when they chose Apply. Work through the whole list, then finish with a §13 review pass across every affected screen and report ONE summary at the end: what was migrated, what the review found and fixed, and anything that genuinely needs a human decision (listed for later, not asked one by one).
-- **Browse:** present a compact brief obeying §11's own density rules — identity & the seven §1 principles, the palette at a glance (§2), the two-voices type system (§3), the workhorse components (`.card`, `.label-mono`, `.stat-num`, `Pill`, `SectionCard`, `MetricTile`, the primary button — §4–§6), and the governance layer (§11 density ladder, §12 nothing-skipped adoption, §13 review gate). Specific questions ("what's the exact card shadow?") answer from the relevant § of the bundled document, quoted exactly.
+- **Browse:** present a compact brief obeying §11's own density rules — identity & the seven §1 principles, the palette at a glance (§2), the two-voices type system (§3), the workhorse components (`.card`, `.label-mono`, `.stat-num`, `Pill`, `SectionCard`, `MetricTile`, the primary button — §4–§6), and the governance layer (§11 density ladder, §12 nothing-skipped adoption, §13 review gate). Specific questions ("what's the exact card shadow?") answer from the relevant section file, quoted exactly — most Browse questions cost a single small read.
 
 ## How to work
 
-**1. Read before you build.** Pull the relevant sections of `references/design.md` before writing UI code — it carries exact values and class recipes, so nothing needs reverse-engineering:
+**1. Read before you build — and read only what the task needs.** Unsure where something lives? Start with `references/00-index.md` (small). Pull only the relevant section files before writing UI code — they carry exact values and class recipes, so nothing needs reverse-engineering:
 
-| Need | Section |
+| Need | File |
 |---|---|
-| Principles & identity (elevation = brighter, no red ever, AI is ambient) | §1 |
-| Color tokens, gradients, semantic meanings | §2 |
-| Typography: families, scale, the marquee-serif rule | §3 |
-| Surfaces, shadows, radii (the glass `.card`) | §4 |
-| Shells, spacing rhythm, z-ladder | §5 |
-| Component recipes (Pill, SectionCard, buttons, modals, inputs, chat, opening grammar) | §6 |
-| Motion: easings, durations, AnimatePresence rules, reduced motion | §7 |
-| Icons & data-viz color mapping | §8 |
-| Voice & microcopy | §9 |
-| The do/don't checklist | §10 |
+| Principles & identity (elevation = brighter, no red ever, AI is ambient) | `references/01-principles.md` |
+| Color tokens, gradients, semantic meanings | `references/02-color.md` |
+| Typography: families, scale, the marquee-serif rule | `references/03-typography.md` |
+| Surfaces, shadows, radii (the glass `.card`) | `references/04-surfaces.md` |
+| Shells, spacing rhythm, full-width & responsive mandates, z-ladder | `references/05-layout.md` |
+| Component recipes (Pill, SectionCard, buttons, modals, inputs, chat, opening grammar) | `references/06-components.md` |
+| Motion: easings, durations, AnimatePresence rules, reduced motion | `references/07-motion.md` |
+| Icons & data-viz color mapping | `references/08-icons-dataviz.md` |
+| Voice & microcopy | `references/09-voice.md` |
+| The do/don't checklist | `references/10-rules.md` |
+| Density & progressive disclosure | `references/11-density.md` |
+| Bootstrapping a new project | `references/12-adoption.md` |
+| The review gate & QA matrix | `references/13-review-gate.md` |
+
+Typical loads: a Fix audit starts from `10-rules.md` + `13-review-gate.md` and pulls the sections its findings touch; Generate reads `02`–`06` + `11-density.md`, adding `07-motion.md` when animating; Browse answers most questions from one file. Loading the whole set is a defect unless the task genuinely spans everything (a full §12 bootstrap comes close).
 
 **2. Structure content by §11 (density & progressive disclosure).** Body copy past ~3 lines becomes titled brand-dot bullets; state-bearing lists use the earned-checkmark vocabulary (a checkmark is a claim — only verified states wear it); a page that outgrows its scroll converts to URL-backed tabs, never a longer scroll. The ladder is `sentence → bullets → titled groups → tabs → separate screen`, one rung at a time.
 
 **3. In a new or partially-adopted project, run the §12 bootstrap before the first screen ships:** tokens into the Tailwind config, fonts loaded, `.card`/`.label-mono`/`.stat-num`, the primitives ported, global chrome, the motion clamp, a test framework, and the review gate wired into the definition of done. Any deviation from the document must be written down (rule, reason, approver) — an undocumented deviation is a bug. Brand hexes may be re-pointed for a different brand; the principles, density rules, review gate, and accessibility floors are invariant.
 
-**4. "Done" is gated by §13.** No UI change is done because it compiles or looks right to its author. Before confirming done: drive the §13.3 state & edge-case matrix on the running screen (loading, empty, error, overflow, keyboard, races, deep links, reduced motion, responsive), then have a **non-author review pass** walk the §13.2 checklist — spawn a fresh reviewer subagent where available, since the author of the code must not be its only judge. Findings get fixed and re-reviewed, never waived. The shipping bar is zero known failures.
+**4. "Done" is gated by §13.** No UI change is done because it compiles or looks right to its author. Before confirming done: drive the §13.3 state & edge-case matrix on the running screen (loading, empty, error, overflow, keyboard, races, deep links, reduced motion, responsive), then have a **non-author review pass** walk the §13.2 checklist — spawn a fresh reviewer subagent where available, since the author of the code must not be its only judge. Scope the reviewer's reading: hand it `references/13-review-gate.md` plus only the section files the change touches — never the whole reference set. Findings get fixed and re-reviewed, never waived. The shipping bar is zero known failures.
+
+**5. Narrate progress.** Long stretches of silent tool work read as a hang — the user watches a token counter climb with nothing to show for it. Post a one-line chat note when a phase starts or lands ("audit done — 14 violations across 3 files", "tokens installed, porting primitives", "review pass running"). The findings list and the final summary stay the deliverables; the phase notes are what keep the run legible while it works.
 
 ## Writing voice — no AI fingerprints, ever
 
@@ -61,8 +68,8 @@ Every word this skill produces — UI microcopy, headings, empty states, error m
 
 ## Working alongside other design tooling
 
-If the project mandates a craft skill (e.g. `impeccable` in aia-brand-planning), use both: that skill drives the design *process*; this document remains the authority on the visual *language* and the governance (density, adoption, review gate). When the two disagree on a value or recipe, `references/design.md` wins.
+If the project mandates a craft skill (e.g. `impeccable` in aia-brand-planning), use both: that skill drives the design *process*; this document remains the authority on the visual *language* and the governance (density, adoption, review gate). When the two disagree on a value or recipe, the `references/` section files win.
 
 ## Maintenance
 
-The canonical source of this document lives in the `aia-brand-planning` repo (`design.md`, versioned in its header). When that file revs, refresh `references/design.md` here and re-share the packaged skill so every consumer inherits the update.
+The canonical source of this document lives in the `aia-brand-planning` repo (`design.md`, versioned in its header). When that file revs, re-split it into the per-section files here — `references/00-index.md` documents the exact procedure and carries the version row to bump — then re-share the packaged skill so every consumer inherits the update.
