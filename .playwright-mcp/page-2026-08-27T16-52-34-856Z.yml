@@ -1,0 +1,132 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - link "Pulse" [ref=f10e3] [cursor=pointer]:
+      - /url: index.html
+    - navigation "Primary" [ref=f10e8]:
+      - link "Dashboard" [ref=f10e9] [cursor=pointer]:
+        - /url: index.html
+      - link "Settings" [ref=f10e10] [cursor=pointer]:
+        - /url: settings.html
+      - button "Sign out" [ref=f10e11] [cursor=pointer]
+  - main [ref=f10e12]:
+    - generic [ref=f10e13]:
+      - generic [ref=f10e14]: portfolio · week 35 · data through aug 24
+      - heading "The week, in one look." [level=1] [ref=f10e20]
+      - paragraph [ref=f10e21]: Revenue is holding at $4.2M and share ticked up to 23.7% — but scripts slipped 3.1%, and two brands need a closer look.
+    - region "Key metrics" [ref=f10e22]:
+      - generic [ref=f10e23]:
+        - generic [ref=f10e24]: Total revenue
+        - generic [ref=f10e25]: $4.2M
+        - generic [ref=f10e26]:
+          - generic [ref=f10e30]: +12.4%
+          - generic [ref=f10e31]: vs last week
+      - generic [ref=f10e32]:
+        - generic [ref=f10e33]: Scripts written
+        - generic [ref=f10e34]: 18,204
+        - generic [ref=f10e35]:
+          - generic [ref=f10e38]: −3.1%
+          - generic [ref=f10e39]: vs last week
+      - generic [ref=f10e40]:
+        - generic [ref=f10e41]: Market share
+        - generic [ref=f10e42]: 23.7%
+        - generic [ref=f10e43]:
+          - generic [ref=f10e47]: +0.8%
+          - generic [ref=f10e48]: vs last week
+      - generic [ref=f10e49]:
+        - generic [ref=f10e50]: Open alerts
+        - generic [ref=f10e51]: "7"
+        - generic [ref=f10e52]: needs review
+    - generic [ref=f10e55]:
+      - region [ref=f10e56]:
+        - generic [ref=f10e57]: This week
+        - heading "Weekly script volume" [level=3] [ref=f10e60]
+        - 'img "Weekly script volume Scripts by day: Monday 2,100. Tuesday 3,400. Wednesday 2,900. Thursday 4,200 — the peak. Friday 3,700. Saturday 1,600. Sunday 1,100." [ref=f10e61]':
+          - generic [ref=f10e62]:
+            - generic [ref=f10e63]: 2.1k
+            - generic [ref=f10e65]: Mon
+          - generic [ref=f10e66]:
+            - generic [ref=f10e67]: 3.4k
+            - generic [ref=f10e69]: Tue
+          - generic [ref=f10e70]:
+            - generic [ref=f10e71]: 2.9k
+            - generic [ref=f10e73]: Wed
+          - generic [ref=f10e74]:
+            - generic [ref=f10e75]: 4.2k
+            - generic [ref=f10e77]: Thu
+          - generic [ref=f10e78]:
+            - generic [ref=f10e79]: 3.7k
+            - generic [ref=f10e81]: Fri
+          - generic [ref=f10e82]:
+            - generic [ref=f10e83]: 1.6k
+            - generic [ref=f10e85]: Sat
+          - generic [ref=f10e86]:
+            - generic [ref=f10e87]: 1.1k
+            - generic [ref=f10e89]: Sun
+        - paragraph [ref=f10e90]: "Scripts by day: Monday 2,100. Tuesday 3,400. Wednesday 2,900. Thursday 4,200 — the peak. Friday 3,700. Saturday 1,600. Sunday 1,100."
+      - region [ref=f10e91]:
+        - generic [ref=f10e92]: Iris · portfolio review
+        - heading "Iris portfolio review" [level=3] [ref=f10e98]
+        - generic [ref=f10e157]:
+          - paragraph [ref=f10e158]: I went through this week's scripts. The dip is concentrated, not general — here's where I'd start.
+          - list [ref=f10e159]:
+            - listitem [ref=f10e160]:
+              - paragraph [ref=f10e162]:
+                - strong [ref=f10e163]: Neurovex is driving the decline.
+                - text: Two regions account for most of the −3.1% — the rest of the portfolio is flat or up.
+            - listitem [ref=f10e164]:
+              - paragraph [ref=f10e166]:
+                - strong [ref=f10e167]: Dermaquil has stalled at 3.1% share.
+                - text: New starts have trailed refills for four straight weeks.
+            - listitem [ref=f10e168]:
+              - paragraph [ref=f10e170]:
+                - strong [ref=f10e171]: Cardiofen can absorb attention.
+                - text: It's ahead of plan, so the near-term focus belongs to the two brands above.
+          - generic [ref=f10e172]:
+            - button "Open the full analysis" [ref=f10e173] [cursor=pointer]
+            - button "Ask about a brand" [ref=f10e176] [cursor=pointer]
+    - region [ref=f10e103]:
+      - generic [ref=f10e104]: Four brands
+      - heading "Brand portfolio" [level=3] [ref=f10e107]
+      - table [ref=f10e109]:
+        - rowgroup [ref=f10e110]:
+          - row [ref=f10e111]:
+            - columnheader "Brand" [ref=f10e112]
+            - columnheader "TRx" [ref=f10e113]
+            - columnheader "NRx" [ref=f10e114]
+            - columnheader "Share" [ref=f10e115]
+            - columnheader "Status" [ref=f10e116]
+            - columnheader "Actions" [ref=f10e117]
+        - rowgroup [ref=f10e119]:
+          - row [ref=f10e120]:
+            - cell "Cardiofen" [ref=f10e121]
+            - cell "8,340" [ref=f10e122]
+            - cell "2,110" [ref=f10e123]
+            - cell "31.2%" [ref=f10e124]
+            - cell "on track" [ref=f10e125]
+            - cell [ref=f10e127]:
+              - button "View" [ref=f10e128] [cursor=pointer]
+          - row [ref=f10e129]:
+            - cell "Neurovex" [ref=f10e130]
+            - cell "5,220" [ref=f10e131]
+            - cell "1,480" [ref=f10e132]
+            - cell "19.8%" [ref=f10e133]
+            - cell "at risk" [ref=f10e134]
+            - cell [ref=f10e136]:
+              - button "Review the dip" [ref=f10e137] [cursor=pointer]
+          - row [ref=f10e138]:
+            - cell "Oncolir" [ref=f10e139]
+            - cell "3,910" [ref=f10e140]
+            - cell "990" [ref=f10e141]
+            - cell "14.5%" [ref=f10e142]
+            - cell "watch" [ref=f10e143]
+            - cell [ref=f10e145]:
+              - button "View" [ref=f10e146] [cursor=pointer]
+          - row [ref=f10e147]:
+            - cell "Dermaquil" [ref=f10e148]
+            - cell "780" [ref=f10e149]
+            - cell "240" [ref=f10e150]
+            - cell "3.1%" [ref=f10e151]
+            - cell "declining" [ref=f10e152]
+            - cell [ref=f10e154]:
+              - button "Review the stall" [ref=f10e155] [cursor=pointer]
+    - generic [ref=f10e156]: Pulse · data through aug 24, 2026 · refreshed weekly

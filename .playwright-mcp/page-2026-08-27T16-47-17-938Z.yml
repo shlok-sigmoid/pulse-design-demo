@@ -1,0 +1,116 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Pulse" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+    - navigation "Primary" [ref=e8]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: index.html
+      - link "Settings" [ref=e10] [cursor=pointer]:
+        - /url: settings.html
+      - button "Sign out" [ref=e11] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]: portfolio · week 35 · data through aug 24
+      - heading "The week, in one look." [level=1] [ref=e20]
+      - paragraph [ref=e21]: Revenue is holding at $4.2M and share ticked up to 23.7% — but scripts slipped 3.1%, and two brands need a closer look.
+    - region "Key metrics" [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Total revenue
+        - generic [ref=e25]: $4.2M
+        - generic [ref=e26]:
+          - generic [ref=e30]: +12.4%
+          - generic [ref=e31]: vs last week
+      - generic [ref=e32]:
+        - generic [ref=e33]: Scripts written
+        - generic [ref=e34]: 18,204
+        - generic [ref=e35]:
+          - generic [ref=e38]: −3.1%
+          - generic [ref=e39]: vs last week
+      - generic [ref=e40]:
+        - generic [ref=e41]: Market share
+        - generic [ref=e42]: 23.7%
+        - generic [ref=e43]:
+          - generic [ref=e47]: +0.8%
+          - generic [ref=e48]: vs last week
+      - generic [ref=e49]:
+        - generic [ref=e50]: Open alerts
+        - generic [ref=e51]: "7"
+        - generic [ref=e52]: needs review
+    - generic [ref=e55]:
+      - region [ref=e56]:
+        - generic [ref=e57]: This week
+        - heading "Weekly script volume" [level=3] [ref=e60]
+        - 'img "Weekly script volume Scripts by day: Monday 2,100. Tuesday 3,400. Wednesday 2,900. Thursday 4,200 — the peak. Friday 3,700. Saturday 1,600. Sunday 1,100." [ref=e61]':
+          - generic [ref=e62]:
+            - generic [ref=e63]: 2.1k
+            - generic [ref=e65]: Mon
+          - generic [ref=e66]:
+            - generic [ref=e67]: 3.4k
+            - generic [ref=e69]: Tue
+          - generic [ref=e70]:
+            - generic [ref=e71]: 2.9k
+            - generic [ref=e73]: Wed
+          - generic [ref=e74]:
+            - generic [ref=e75]: 4.2k
+            - generic [ref=e77]: Thu
+          - generic [ref=e78]:
+            - generic [ref=e79]: 3.7k
+            - generic [ref=e81]: Fri
+          - generic [ref=e82]:
+            - generic [ref=e83]: 1.6k
+            - generic [ref=e85]: Sat
+          - generic [ref=e86]:
+            - generic [ref=e87]: 1.1k
+            - generic [ref=e89]: Sun
+        - paragraph [ref=e90]: "Scripts by day: Monday 2,100. Tuesday 3,400. Wednesday 2,900. Thursday 4,200 — the peak. Friday 3,700. Saturday 1,600. Sunday 1,100."
+      - region [ref=e91]:
+        - generic [ref=e92]: Iris · portfolio review
+        - heading "Iris portfolio review" [level=3] [ref=e98]
+        - status [ref=e99]:
+          - paragraph [ref=e102]: reading the week's numbers…
+    - region [ref=e103]:
+      - generic [ref=e104]: Four brands
+      - heading "Brand portfolio" [level=3] [ref=e107]
+      - table [ref=e109]:
+        - rowgroup [ref=e110]:
+          - row [ref=e111]:
+            - columnheader "Brand" [ref=e112]
+            - columnheader "TRx" [ref=e113]
+            - columnheader "NRx" [ref=e114]
+            - columnheader "Share" [ref=e115]
+            - columnheader "Status" [ref=e116]
+            - columnheader "Actions" [ref=e117]
+        - rowgroup [ref=e119]:
+          - row [ref=e120]:
+            - cell "Cardiofen" [ref=e121]
+            - cell "8,340" [ref=e122]
+            - cell "2,110" [ref=e123]
+            - cell "31.2%" [ref=e124]
+            - cell "on track" [ref=e125]
+            - cell [ref=e127]:
+              - button "View" [ref=e128] [cursor=pointer]
+          - row [ref=e129]:
+            - cell "Neurovex" [ref=e130]
+            - cell "5,220" [ref=e131]
+            - cell "1,480" [ref=e132]
+            - cell "19.8%" [ref=e133]
+            - cell "at risk" [ref=e134]
+            - cell [ref=e136]:
+              - button "Review the dip" [ref=e137] [cursor=pointer]
+          - row [ref=e138]:
+            - cell "Oncolir" [ref=e139]
+            - cell "3,910" [ref=e140]
+            - cell "990" [ref=e141]
+            - cell "14.5%" [ref=e142]
+            - cell "watch" [ref=e143]
+            - cell [ref=e145]:
+              - button "View" [ref=e146] [cursor=pointer]
+          - row [ref=e147]:
+            - cell "Dermaquil" [ref=e148]
+            - cell "780" [ref=e149]
+            - cell "240" [ref=e150]
+            - cell "3.1%" [ref=e151]
+            - cell "declining" [ref=e152]
+            - cell [ref=e154]:
+              - button "Review the stall" [ref=e155] [cursor=pointer]
+    - generic [ref=e156]: Pulse · data through aug 24, 2026 · refreshed weekly

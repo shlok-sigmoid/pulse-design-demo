@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PULSE - Trial Command Center</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="topbar">
+    <div class="logo">PULSE&trade;</div>
+    <div class="nav">
+      <a href="index.html" class="active">DASHBOARD</a>
+      <a href="settings.html">SETTINGS</a>
+      <button class="btn-red">LOGOUT</button>
+    </div>
+  </div>
+
+  <h1>Welcome To Your Trial Command Center!!</h1>
+  <p class="intro">
+    Pulse is a robust, seamless platform designed to empower clinical teams and elevate
+    trial oversight in today's fast-paced clinical research landscape. Whether you're a
+    study coordinator or an expert investigator, our streamlined solution helps you unlock
+    actionable insights, leverage cutting-edge analytics, and harness the full power of
+    your enrollment data. Moreover, Pulse delivers comprehensive visibility across every
+    site and every participant. Furthermore, it's important to note that our platform
+    integrates with all of your existing clinical systems. Additionally, the intuitive
+    interface ensures that every stakeholder can delve into the metrics that matter most
+    and so much more!
+  </p>
+
+  <div class="stats">
+    <div class="stat-box">
+      <div class="stat-label">PARTICIPANTS ENROLLED</div>
+      <div class="stat-value">1,284</div>
+      <div class="delta up">&#9650; +38 THIS WEEK</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-label">ENROLLMENT TARGET</div>
+      <div class="stat-value">86%</div>
+      <div class="delta up">&#9650; +2.6%</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-label">SCREEN FAILURES</div>
+      <div class="stat-value">18.4%</div>
+      <div class="delta down">&#9660; +1.2%</div>
+    </div>
+    <div class="stat-box alert-box">
+      <div class="stat-label">SAFETY QUERIES</div>
+      <div class="stat-value" id="alert-count">7</div>
+      <div class="delta down">CRITICAL</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Weekly Enrollment</h2>
+    <div class="chart" id="chart">
+      <div class="bar" style="height:40%;background:#ff0000"><span>W29</span></div>
+      <div class="bar" style="height:65%;background:#ff9800"><span>W30</span></div>
+      <div class="bar" style="height:55%;background:#ffff00"><span>W31</span></div>
+      <div class="bar" style="height:80%;background:#4caf50"><span>W32</span></div>
+      <div class="bar" style="height:70%;background:#00bcd4"><span>W33</span></div>
+      <div class="bar" style="height:30%;background:#9c27b0"><span>W34</span></div>
+      <div class="bar" style="height:20%;background:#e91e63"><span>W35</span></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Site Enrollment</h2>
+    <table>
+      <tr>
+        <th>SITE</th><th>ENROLLED</th><th>TARGET</th><th>SCREEN-FAIL</th><th>STATUS</th><th>ACTION</th>
+      </tr>
+      <tr>
+        <td>Boston - Mass General</td><td>212</td><td>240</td><td>12.1%</td>
+        <td><span class="status green">&#10004; ON TRACK</span></td>
+        <td><button class="btn-small">View</button></td>
+      </tr>
+      <tr>
+        <td>Austin - Dell Medical</td><td>148</td><td>220</td><td>24.8%</td>
+        <td><span class="status red">&#10006; AT RISK</span></td>
+        <td><button class="btn-small btn-red">FIX NOW</button></td>
+      </tr>
+      <tr>
+        <td>Leeds - St James's</td><td>176</td><td>200</td><td>16.9%</td>
+        <td><span class="status yellow">&#9888; WATCH</span></td>
+        <td><button class="btn-small">View</button></td>
+      </tr>
+      <tr>
+        <td>Mumbai - Hinduja</td><td>96</td><td>210</td><td>28.2%</td>
+        <td><span class="status red">&#10006; LAGGING</span></td>
+        <td><button class="btn-small btn-red">FIX NOW</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel ai-panel">
+    <h2>&#129302; AI ASSISTANT</h2>
+    <div class="spinner" id="spinner"></div>
+    <p id="ai-status">ANALYZING TRIAL DATA... PLEASE WAIT...</p>
+    <div id="ai-result" style="display:none">
+      <p>&#9989; Analysis complete! Our powerful AI has seamlessly identified 3 game-changing
+      opportunities to supercharge your enrollment performance!</p>
+      <button class="btn-green" onclick="alert('Coming soon!')">UNLOCK INSIGHTS NOW!</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Fast. Simple. Powerful.</p>
+    <p class="copyright">&copy; 2026 Pulse Clinical Analytics. All Rights Reserved.</p>
+  </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

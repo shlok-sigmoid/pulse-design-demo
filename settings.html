@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PULSE - Settings</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="topbar">
+    <div class="logo">PULSE&trade;</div>
+    <div class="nav">
+      <a href="index.html">DASHBOARD</a>
+      <a href="settings.html" class="active">SETTINGS</a>
+      <button class="btn-red">LOGOUT</button>
+    </div>
+  </div>
+
+  <h1>Account Settings</h1>
+
+  <div class="panel">
+    <h2>Profile</h2>
+    <div class="form-row">
+      <label>FULL NAME <span class="req">*</span></label>
+      <input type="text" value="Ulva Rameshbhai">
+    </div>
+    <div class="form-row">
+      <label>EMAIL ADDRESS <span class="req">*</span></label>
+      <input type="email" value="">
+      <div class="error-msg">ERROR!!! EMAIL IS REQUIRED!!!</div>
+    </div>
+    <div class="form-row">
+      <label>DEFAULT STUDY</label>
+      <select>
+        <option>ATLAS-2</option>
+        <option>BEACON-1</option>
+        <option>CORAL-3</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label>NOTIFICATION FREQUENCY</label>
+      <select>
+        <option>Real-time</option>
+        <option>Daily digest</option>
+        <option>Weekly</option>
+      </select>
+    </div>
+    <button class="btn-green" onclick="alert('Saved!')">SAVE CHANGES NOW!</button>
+    <button class="btn-red" onclick="alert('Deleted!')">DELETE ACCOUNT</button>
+  </div>
+
+  <div class="footer">
+    <p>Fast. Simple. Powerful.</p>
+    <p class="copyright">&copy; 2026 Pulse Clinical Analytics. All Rights Reserved.</p>
+  </div>
+
+</div>
+</body>
+</html>
