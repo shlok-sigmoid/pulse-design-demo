@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pulse — welcome</title>
+<title>Pulse — ATLAS-2 dashboard</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230187FA%22/><path d=%22M4 12h4l2.5-6 3 12 2.5-6h4%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,28 +19,189 @@
     </span>
     <span>Pulse</span>
   </a>
+  <nav class="app-nav" aria-label="Main">
+    <a class="nav-link active" href="index.html" aria-current="page">Dashboard</a>
+    <a class="nav-link" href="settings.html">Settings</a>
+  </nav>
 </header>
 
 <main class="page">
-  <div class="hero-split">
 
-    <section class="opening rise" style="--d:0">
-      <h1>Welcome to the Pulse</h1>
-    </section>
+  <section class="opening rise" style="--d:0">
+    <div class="byline">
+      <span class="mascot-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h3l2.5-5 3 10 2.5-5h5"/></svg>
+      </span>
+      <span class="label-mono">ATLAS-2 · phase 3 · week 35</span>
+    </div>
+    <h1>Enrollment is slowing.</h1>
+    <p class="verdict"><span class="stat-num">1,284</span> participants are enrolled — <span class="stat-num">86%</span> of target — but weekly intake has fallen three weeks straight, screen failures sit at <span class="stat-num">18.4%</span>, and <span class="stat-num">7</span> safety queries wait on review.</p>
+    <div class="guide-strip">
+      <span class="mascot-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h3l2.5-5 3 10 2.5-5h5"/></svg>
+      </span>
+      <p><strong>Mumbai and Austin are pulling the average down.</strong> The analyst read this week's site data and left three findings below.</p>
+      <a class="guide-chip" href="#analyst">Read the findings
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
 
-    <section class="card panel rise" style="--d:1" aria-labelledby="start-title">
+  <section class="metric-grid" aria-label="Study metrics">
+    <div class="card metric-tile metric-tile-hero rise" style="--d:1">
+      <span class="label-mono">Participants enrolled</span>
+      <span class="metric-value stat-num">1,284</span>
+      <span class="delta pos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        <span class="stat-num">+38</span>&nbsp;this week
+      </span>
+    </div>
+    <div class="card metric-tile rise" style="--d:2">
+      <span class="label-mono">Enrollment target</span>
+      <span class="metric-value stat-num">86%</span>
+      <span class="delta pos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        <span class="stat-num">+2.6</span>&nbsp;pts
+      </span>
+      <div class="progress" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="86% of enrollment target">
+        <div class="progress-fill" style="--w:86%"></div>
+      </div>
+    </div>
+    <div class="card metric-tile rise" style="--d:3">
+      <span class="label-mono">Screen failures</span>
+      <span class="metric-value stat-num">18.4%</span>
+      <span class="delta neg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        <span class="stat-num">+1.2</span>&nbsp;pts&nbsp;— worsening
+      </span>
+    </div>
+    <div class="card metric-tile rise" style="--d:4">
+      <span class="label-mono">Safety queries</span>
+      <span class="metric-value stat-num">7</span>
+      <span class="gap-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        Needs review
+      </span>
+    </div>
+  </section>
+
+  <div class="exhibit-row">
+
+    <section class="card panel rise" style="--d:5" aria-labelledby="chart-title">
       <div class="panel-head">
         <span class="eyebrow-dot" aria-hidden="true"></span>
-        <span class="label-mono">Two steps</span>
+        <span class="label-mono">Weekly enrollment</span>
       </div>
-      <h3 id="start-title">Build the dashboard from here</h3>
-      <ol class="step-list">
-        <li><span class="step-mark" aria-hidden="true"></span><p><strong>Open Claude Code in this folder.</strong> The design-plan skill loads from <span class="kbd">.claude/skills/</span> on its own.</p></li>
-        <li><span class="step-mark" aria-hidden="true"></span><p><strong>Ask for the app.</strong> Try "build the Pulse clinical study operations dashboard" — or type <span class="kbd">/design-plan</span> and pick Generate.</p></li>      </ol>
+      <h2 id="chart-title">New participants per week</h2>
+      <p class="caption">W32 peaked at <span class="stat-num">48</span> — intake has slowed three weeks straight, down to <span class="stat-num">12</span> in W35.</p>
+      <div class="chart">
+        <div class="chart-cols" aria-hidden="true">
+          <div class="bar-col" style="--i:0"><span class="bar-value stat-num">24</span><div class="bar" style="--h:50%"></div><span class="bar-week">W29</span></div>
+          <div class="bar-col" style="--i:1"><span class="bar-value stat-num">39</span><div class="bar" style="--h:81%"></div><span class="bar-week">W30</span></div>
+          <div class="bar-col" style="--i:2"><span class="bar-value stat-num">33</span><div class="bar" style="--h:69%"></div><span class="bar-week">W31</span></div>
+          <div class="bar-col" style="--i:3"><span class="bar-value stat-num">48</span><div class="bar" style="--h:100%"></div><span class="bar-week">W32</span></div>
+          <div class="bar-col" style="--i:4"><span class="bar-value stat-num">42</span><div class="bar" style="--h:88%"></div><span class="bar-week">W33</span></div>
+          <div class="bar-col" style="--i:5"><span class="bar-value stat-num">18</span><div class="bar" style="--h:38%"></div><span class="bar-week">W34</span></div>
+          <div class="bar-col" style="--i:6"><span class="bar-value stat-num">12</span><div class="bar" style="--h:25%"></div><span class="bar-week">W35</span></div>
+        </div>
+        <table class="sr-only">
+          <caption>New participants enrolled per week</caption>
+          <thead><tr><th scope="col">Week</th><th scope="col">Enrolled</th></tr></thead>
+          <tbody>
+            <tr><td>W29</td><td>24</td></tr>
+            <tr><td>W30</td><td>39</td></tr>
+            <tr><td>W31</td><td>33</td></tr>
+            <tr><td>W32</td><td>48</td></tr>
+            <tr><td>W33</td><td>42</td></tr>
+            <tr><td>W34</td><td>18</td></tr>
+            <tr><td>W35</td><td>12</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="analyst" class="card panel analyst-card rise" style="--d:6" aria-labelledby="analyst-title">
+      <div class="iris-grid" aria-hidden="true"></div>
+      <div class="analyst-body">
+        <div class="panel-head">
+          <span class="mascot-chip" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h3l2.5-5 3 10 2.5-5h5"/></svg>
+          </span>
+          <span class="label-mono">AI analyst</span>
+        </div>
+        <h2 id="analyst-title">This week, read by the analyst</h2>
+
+        <div id="analyst-hold" role="status" aria-live="polite">
+          <div class="scan-sweep" aria-hidden="true"></div>
+          <p class="hold-note">Reading week-35 site data — enrollment, screen failures, and open queries.</p>
+        </div>
+
+        <div id="analyst-result" hidden>
+          <p class="caption"><span class="stat-num">3</span> findings · from week-35 site data</p>
+          <ul class="dot-list">
+            <li><span class="dot" aria-hidden="true"></span><p><strong>Mumbai is <span class="stat-num">54%</span> behind target.</strong> <span class="stat-num">96</span> of <span class="stat-num">210</span> enrolled, with the study's highest screen-fail rate at <span class="stat-num">28.2%</span> — the eligibility criteria deserve a site-level review.</p></li>
+            <li><span class="dot" aria-hidden="true"></span><p><strong>Intake has fallen three weeks straight.</strong> From <span class="stat-num">48</span> in W32 to <span class="stat-num">12</span> in W35 — at this pace the enrollment window closes about six weeks late.</p></li>
+            <li><span class="dot" aria-hidden="true"></span><p><strong>Austin's failures look like eligibility misreads.</strong> <span class="stat-num">24.8%</span> screen failure is double Boston's rate on the same protocol — worth comparing coordinator screening notes.</p></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
   </div>
+
+  <section class="card panel rise" style="--d:7" aria-labelledby="sites-title">
+    <div class="panel-head">
+      <span class="eyebrow-dot" aria-hidden="true"></span>
+      <span class="label-mono">Site enrollment</span>
+    </div>
+    <h2 id="sites-title">Four sites, week 35</h2>
+    <p class="caption">Boston leads on pace and quality — Mumbai and Austin carry the study's risk.</p>
+    <table class="site-table">
+      <thead>
+        <tr>
+          <th scope="col">Site</th>
+          <th scope="col" class="num">Enrolled / target</th>
+          <th scope="col" class="num">Screen-fail</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="site-cell"><span class="site-name">Mass General</span> <span class="site-city">· Boston</span></td>
+          <td class="num" data-label="Enrolled"><span class="site-progress"><span class="stat-num">212 / 240</span><span class="progress"><span class="progress-fill" style="--w:88%"></span></span></span></td>
+          <td class="num" data-label="Screen-fail"><span class="stat-num">12.1%</span></td>
+          <td data-label="Status"><span class="pill pill-pos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            on track</span></td>
+        </tr>
+        <tr>
+          <td class="site-cell"><span class="site-name">Dell Medical</span> <span class="site-city">· Austin</span></td>
+          <td class="num" data-label="Enrolled"><span class="site-progress"><span class="stat-num">148 / 220</span><span class="progress"><span class="progress-fill" style="--w:67%"></span></span></span></td>
+          <td class="num" data-label="Screen-fail"><span class="stat-num">24.8%</span></td>
+          <td data-label="Status"><span class="pill pill-neg">at risk</span></td>
+        </tr>
+        <tr>
+          <td class="site-cell"><span class="site-name">St James's</span> <span class="site-city">· Leeds</span></td>
+          <td class="num" data-label="Enrolled"><span class="site-progress"><span class="stat-num">176 / 200</span><span class="progress"><span class="progress-fill" style="--w:88%"></span></span></span></td>
+          <td class="num" data-label="Screen-fail"><span class="stat-num">16.9%</span></td>
+          <td data-label="Status"><span class="pill pill-warn">watch</span></td>
+        </tr>
+        <tr>
+          <td class="site-cell"><span class="site-name">Hinduja</span> <span class="site-city">· Mumbai</span></td>
+          <td class="num" data-label="Enrolled"><span class="site-progress"><span class="stat-num">96 / 210</span><span class="progress"><span class="progress-fill" style="--w:46%"></span></span></span></td>
+          <td class="num" data-label="Screen-fail"><span class="stat-num">28.2%</span></td>
+          <td data-label="Status"><span class="pill pill-neg">lagging</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="page-foot">
+    <span class="label-mono">ATLAS-2 · phase 3 · data as of week 35 — 2026-08-23</span>
+  </footer>
+
 </main>
 
+<script src="app.js"></script>
 </body>
 </html>

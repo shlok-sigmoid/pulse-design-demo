@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse — settings</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230187FA%22/><path d=%22M4 12h4l2.5-6 3 12 2.5-6h4%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="wordmark" href="index.html">
+    <span class="logo-chip" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg>
+    </span>
+    <span>Pulse</span>
+  </a>
+  <nav class="app-nav" aria-label="Main">
+    <a class="nav-link" href="index.html">Dashboard</a>
+    <a class="nav-link active" href="settings.html" aria-current="page">Settings</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="opening rise" style="--d:0">
+    <div class="byline">
+      <span class="mascot-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h3l2.5-5 3 10 2.5-5h5"/></svg>
+      </span>
+      <span class="label-mono">ATLAS-2 · account</span>
+    </div>
+    <h1>Settings.</h1>
+    <p class="verdict">Your profile sets where notifications land and which study opens first.</p>
+  </section>
+
+  <div class="settings-grid">
+
+    <section class="card panel rise" style="--d:1" aria-labelledby="profile-title">
+      <div class="panel-head">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span class="label-mono">Profile</span>
+      </div>
+      <h2 id="profile-title">Who gets notified, and about what</h2>
+      <p class="caption">Changes apply after you save — nothing updates as you type.</p>
+
+      <form id="profile-form" novalidate>
+        <div class="form-row">
+          <label class="label-mono" for="full-name">Full name</label>
+          <input class="input" type="text" id="full-name" name="full-name" value="Ulva Rameshbhai" autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label class="label-mono" for="email">Email · required</label>
+          <input class="input" type="email" id="email" name="email" value="" placeholder="you@example.com" autocomplete="email" aria-describedby="email-error">
+          <p class="field-error" id="email-error" role="alert" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+            <span>Email is required — notifications can't send without it.</span>
+          </p>
+        </div>
+        <div class="form-row">
+          <label class="label-mono" for="default-study">Default study</label>
+          <select class="input" id="default-study" name="default-study">
+            <option selected>ATLAS-2</option>
+            <option>BEACON-1</option>
+            <option>CORAL-3</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label class="label-mono" for="notify-freq">Notification frequency</label>
+          <select class="input" id="notify-freq" name="notify-freq">
+            <option selected>Real-time</option>
+            <option>Daily digest</option>
+            <option>Weekly</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Save changes</button>
+          <span class="chip-saved" id="saved-chip" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            saved · just now
+          </span>
+          <span class="spacer"></span>
+          <button class="btn-ghost" type="button" id="delete-open">Delete account</button>
+        </div>
+        <p class="note-info" id="delete-note" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <span>Nothing was deleted — this demo has no backend.</span>
+        </p>
+      </form>
+    </section>
+
+    <section class="card panel rise" style="--d:2" aria-labelledby="apply-title">
+      <div class="panel-head">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span class="label-mono">How these apply</span>
+      </div>
+      <h2 id="apply-title">What each setting touches</h2>
+      <ul class="dot-list">
+        <li><span class="dot" aria-hidden="true"></span><p><strong>Notifications follow your email.</strong> Safety queries and enrollment alerts for ATLAS-2 go there at the frequency you pick.</p></li>
+        <li><span class="dot" aria-hidden="true"></span><p><strong>Default study sets your landing page.</strong> The dashboard opens on it after sign-in.</p></li>
+        <li><span class="dot" aria-hidden="true"></span><p><strong>Deleting removes only your profile.</strong> Study and enrollment data stay with the study.</p></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer class="page-foot">
+    <span class="label-mono">ATLAS-2 · phase 3 · account settings</span>
+  </footer>
+
+</main>
+
+<div class="modal-scrim" id="delete-modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-title" aria-describedby="delete-body">
+    <h2 id="delete-title">Delete this account?</h2>
+    <p id="delete-body">This removes your profile and preferences. Study and enrollment data stay with ATLAS-2 — deleting your account never touches trial records.</p>
+    <div class="modal-actions">
+      <button class="btn-ghost" type="button" id="delete-cancel">Cancel</button>
+      <button class="btn-danger" type="button" id="delete-confirm">Delete account</button>
+    </div>
+  </div>
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>
