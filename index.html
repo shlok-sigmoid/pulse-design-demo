@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse — welcome</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230187FA%22/><path d=%22M4 12h4l2.5-6 3 12 2.5-6h4%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="wordmark" href="index.html">
+    <span class="logo-chip" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg>
+    </span>
+    <span>Pulse</span>
+  </a>
+</header>
+
+<main class="page">
+  <div class="hero-split">
+
+    <section class="opening rise" style="--d:0">
+      <div class="byline">
+        <span class="mascot-chip" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="label-mono">pulse · from scratch</span>
+      </div>
+      <h1>Nothing here yet. That's the point.</h1>
+      <p class="verdict">This branch has no dashboard — just this page. The design system travels with the repo, so anything built here comes out on it from the first commit.</p>
+    </section>
+
+    <section class="card panel rise" style="--d:1" aria-labelledby="start-title">
+      <div class="panel-head">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span class="label-mono">Three steps</span>
+      </div>
+      <h3 id="start-title">Build the dashboard from here</h3>
+      <ol class="step-list">
+        <li><span class="step-mark" aria-hidden="true"></span><p><strong>Open Claude Code in this folder.</strong> The design-plan skill loads from <span class="kbd">.claude/skills/</span> on its own.</p></li>
+        <li><span class="step-mark" aria-hidden="true"></span><p><strong>Ask for the app.</strong> Try "build the Pulse clinical study operations dashboard" — or type <span class="kbd">/design-plan</span> and pick Generate.</p></li>
+        <li><span class="step-mark" aria-hidden="true"></span><p><strong>Compare the result</strong> against the <span class="kbd">pulse-after-design</span> branch. Same system, no before to copy from.</p></li>
+      </ol>
+    </section>
+
+  </div>
+
+  <footer class="page-foot">
+    <span class="label-mono">Pulse · design-plan demo · from-scratch branch</span>
+  </footer>
+</main>
+
+</body>
+</html>
