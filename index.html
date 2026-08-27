@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse — study operations</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230187FA%22/><path d=%22M4 12h4l2.5-6 3 12 2.5-6h4%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="wordmark" href="index.html">
+    <span class="logo-chip" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg>
+    </span>
+    <span>Pulse</span>
+  </a>
+  <nav class="app-nav" aria-label="Primary">
+    <a href="index.html" aria-current="page">Study</a>
+    <a href="settings.html">Settings</a>
+    <a class="btn-ghost" href="#" role="button">Sign out</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="opening rise" style="--d:0">
+    <div class="byline">
+      <span class="mascot-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span class="label-mono">atlas-2 · week 35 · data through aug 24</span>
+    </div>
+    <h1>The study, in one look.</h1>
+    <p class="verdict">Enrollment stands at <span class="stat-num fig">1,284</span> of the <span class="stat-num fig">1,500</span> target — but screen failures climbed to <span class="stat-num fig">18.4%</span>, and two sites need a closer look.</p>
+  </section>
+
+  <section class="metric-grid" aria-label="Key metrics">
+    <div class="card tile tile-hero rise" style="--d:1">
+      <div class="label-mono tile-label">Participants enrolled</div>
+      <div class="stat-num tile-value hero">1,284</div>
+      <div class="delta pos">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        <span class="stat-num">+38</span><span class="delta-note">this week</span>
+      </div>
+    </div>
+    <div class="card tile rise" style="--d:2">
+      <div class="label-mono tile-label">Enrollment to target</div>
+      <div class="stat-num tile-value">86%</div>
+      <div class="delta pos">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        <span class="stat-num">+2.6%</span><span class="delta-note">vs last week</span>
+      </div>
+    </div>
+    <div class="card tile rise" style="--d:3">
+      <div class="label-mono tile-label">Screen failure rate</div>
+      <div class="stat-num tile-value">18.4%</div>
+      <div class="delta neg">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10"/><path d="M17 7v10"/></svg>
+        <span class="stat-num">+1.2%</span><span class="delta-note">vs last week</span>
+      </div>
+    </div>
+    <div class="card tile rise" style="--d:4">
+      <div class="label-mono tile-label">Open safety queries</div>
+      <div class="stat-num tile-value">7</div>
+      <span class="pill warn">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        needs review
+      </span>
+    </div>
+  </section>
+
+  <div class="split">
+
+    <section class="card panel rise" style="--d:5" aria-labelledby="chart-title">
+      <div class="panel-head">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span class="label-mono">Last seven weeks</span>
+      </div>
+      <h3 id="chart-title">Weekly enrollment</h3>
+      <div class="chart" role="img" aria-labelledby="chart-title chart-summary">
+        <div class="bar-col"><span class="stat-num bar-val">34</span><div class="bar" style="--h:40%"></div><span class="bar-day">W29</span></div>
+        <div class="bar-col"><span class="stat-num bar-val">55</span><div class="bar" style="--h:65%"></div><span class="bar-day">W30</span></div>
+        <div class="bar-col"><span class="stat-num bar-val">47</span><div class="bar" style="--h:55%"></div><span class="bar-day">W31</span></div>
+        <div class="bar-col"><span class="stat-num bar-val">68</span><div class="bar" style="--h:80%"></div><span class="bar-day">W32</span></div>
+        <div class="bar-col"><span class="stat-num bar-val">60</span><div class="bar" style="--h:70%"></div><span class="bar-day">W33</span></div>
+        <div class="bar-col"><span class="stat-num bar-val">26</span><div class="bar" style="--h:30%"></div><span class="bar-day">W34</span></div>
+        <div class="bar-col"><span class="stat-num bar-val">17</span><div class="bar" style="--h:20%"></div><span class="bar-day">W35</span></div>
+      </div>
+      <p id="chart-summary" class="sr-only">Participants enrolled by week: week 29, 34. Week 30, 55. Week 31, 47. Week 32, 68 — the peak. Week 33, 60. Week 34, 26. Week 35, 17.</p>
+    </section>
+
+    <section class="card panel iris-panel rise" style="--d:6" aria-labelledby="iris-title">
+      <div class="panel-head">
+        <span class="mascot-chip" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="label-mono">Iris · study review</span>
+      </div>
+      <h3 id="iris-title" class="sr-only">Iris study review</h3>
+      <div id="iris-hold" role="status" aria-live="polite">
+        <div class="scan-track" aria-hidden="true"><div class="scan-sweep"></div></div>
+        <p class="hold-note">reading the screening logs…</p>
+      </div>
+      <div id="iris-result" hidden>
+        <p class="iris-verdict">I went through this week's screening logs. The slowdown is concentrated, not general — here's where I'd start.</p>
+        <ul class="dot-list">
+          <li><span class="dot" aria-hidden="true"></span><p><strong>Austin is driving the screen failures.</strong> Most exclusions cite the same inclusion criterion — that pattern usually means a misread, not a signal.</p></li>
+          <li><span class="dot" aria-hidden="true"></span><p><strong>Mumbai has stalled at 96 of 210.</strong> Referrals have trailed screenings for four straight weeks.</p></li>
+          <li><span class="dot" aria-hidden="true"></span><p><strong>Boston can hand off attention.</strong> It's ahead of target, so near-term monitoring belongs to the two sites above.</p></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn-primary" href="#" role="button">
+            Open the full review
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a class="btn-tinted" href="#" role="button">Ask about a site</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="card panel rise" style="--d:7" aria-labelledby="sites-title">
+    <div class="panel-head">
+      <span class="eyebrow-dot" aria-hidden="true"></span>
+      <span class="label-mono">Four sites</span>
+    </div>
+    <h3 id="sites-title">Site enrollment</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Site</th><th scope="col" class="num">Enrolled</th><th scope="col" class="num">Target</th><th scope="col" class="num">Screen-fail</th><th scope="col">Status</th><th scope="col"><span class="sr-only">Actions</span></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-name">Boston · Mass General</td>
+            <td class="num stat-num" data-label="Enrolled">212</td><td class="num stat-num" data-label="Target">240</td><td class="num stat-num" data-label="Screen-fail">12.1%</td>
+            <td class="cell-status"><span class="pill pos">on track</span></td>
+            <td class="row-action"><a class="btn-ghost sm" href="#" role="button">View</a></td>
+          </tr>
+          <tr>
+            <td class="row-name">Austin · Dell Medical</td>
+            <td class="num stat-num" data-label="Enrolled">148</td><td class="num stat-num" data-label="Target">220</td><td class="num stat-num" data-label="Screen-fail">24.8%</td>
+            <td class="cell-status"><span class="pill neg">at risk</span></td>
+            <td class="row-action"><a class="btn-tinted sm" href="#" role="button">Review the failures</a></td>
+          </tr>
+          <tr>
+            <td class="row-name">Leeds · St James's</td>
+            <td class="num stat-num" data-label="Enrolled">176</td><td class="num stat-num" data-label="Target">200</td><td class="num stat-num" data-label="Screen-fail">16.9%</td>
+            <td class="cell-status"><span class="pill warn">watch</span></td>
+            <td class="row-action"><a class="btn-ghost sm" href="#" role="button">View</a></td>
+          </tr>
+          <tr>
+            <td class="row-name">Mumbai · Hinduja</td>
+            <td class="num stat-num" data-label="Enrolled">96</td><td class="num stat-num" data-label="Target">210</td><td class="num stat-num" data-label="Screen-fail">28.2%</td>
+            <td class="cell-status"><span class="pill neg">lagging</span></td>
+            <td class="row-action"><a class="btn-tinted sm" href="#" role="button">Review the stall</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="page-foot">
+    <span class="label-mono">Pulse · atlas-2 · data through aug 24, 2026 · refreshed weekly</span>
+  </footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

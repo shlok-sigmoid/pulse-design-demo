@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse — settings</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230187FA%22/><path d=%22M4 12h4l2.5-6 3 12 2.5-6h4%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="wordmark" href="index.html">
+    <span class="logo-chip" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg>
+    </span>
+    <span>Pulse</span>
+  </a>
+  <nav class="app-nav" aria-label="Primary">
+    <a href="index.html">Study</a>
+    <a href="settings.html" aria-current="page">Settings</a>
+    <a class="btn-ghost" href="#" role="button">Sign out</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="opening rise" style="--d:0">
+    <div class="byline">
+      <span class="mascot-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span class="label-mono">settings · profile</span>
+    </div>
+    <h1>Your defaults, your call.</h1>
+    <p class="verdict">Profile and alert settings — a change applies at the next data refresh.</p>
+  </section>
+
+  <div class="settings-grid">
+
+    <section class="card panel rise" style="--d:1" aria-labelledby="profile-title">
+      <div class="panel-head">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span class="label-mono">Profile</span>
+      </div>
+      <h3 id="profile-title">Who gets the alerts</h3>
+
+      <form id="settings-form" novalidate>
+        <div class="form-field">
+          <label class="label-mono" for="f-name">Full name</label>
+          <input class="input" id="f-name" name="name" type="text" value="Ulva Rameshbhai" autocomplete="name">
+        </div>
+
+        <div class="form-field">
+          <label class="label-mono" for="f-email">Email</label>
+          <input class="input invalid" id="f-email" name="email" type="email" value="" autocomplete="email" aria-describedby="email-error" aria-invalid="true">
+          <p class="field-error" id="email-error">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Enter an email — alerts can't reach you without one.
+          </p>
+        </div>
+
+        <div class="form-field">
+          <label class="label-mono" for="f-study">Default study</label>
+          <select class="input" id="f-study" name="study">
+            <option>ATLAS-2</option>
+            <option>BEACON-1</option>
+            <option>CORAL-3</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label class="label-mono" for="f-freq">Alert frequency</label>
+          <select class="input" id="f-freq" name="frequency">
+            <option>Real-time</option>
+            <option>Daily digest</option>
+            <option>Weekly</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Save changes</button>
+          <button class="btn-ghost destructive" type="button" id="delete-open">Delete account</button>
+          <span class="save-note" id="save-note" hidden role="status">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            saved just now
+          </span>
+        </div>
+      </form>
+    </section>
+
+    <section class="card panel rise" style="--d:2" aria-labelledby="aside-title">
+      <div class="panel-head">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span class="label-mono">Right now</span>
+      </div>
+      <h3 id="aside-title">How alerts reach you</h3>
+      <p class="aside-note">Until an email lands here, safety queries only show on the study screen.</p>
+      <ul class="dot-list">
+        <li><span class="dot" aria-hidden="true"></span><p><strong>Default study</strong> sets which study opens first.</p></li>
+        <li><span class="dot" aria-hidden="true"></span><p><strong>Real-time</strong> sends a safety query the moment it lands; the digest bundles them.</p></li>
+        <li><span class="dot" aria-hidden="true"></span><p><strong>Data refreshes weekly</strong> — the current cut runs through <span class="stat-num">Aug 24</span>.</p></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer class="page-foot">
+    <span class="label-mono">Pulse · settings apply at the next refresh</span>
+  </footer>
+
+</main>
+
+<div class="scrim" id="delete-scrim" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-title">
+    <h2 id="delete-title">Delete this account?</h2>
+    <p>Your alert settings and saved views go with it. Study data stays — it belongs to the team, not the account.</p>
+    <div class="modal-actions">
+      <button class="btn-ghost" type="button" id="delete-cancel">Keep the account</button>
+      <button class="btn-neg" type="button" id="delete-confirm">Delete it</button>
+    </div>
+  </div>
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>
