@@ -14,3 +14,7 @@ All UI in this repo derives from the bundled design system (v1.8) at `.claude/sk
 |---|---|---|---|
 | §12 test framework | No npm test framework; the §13.3 matrix rows are driven in a real browser (Playwright or by hand) per the §13.4 scripted-drive clause | The repo is deliberately build-free — its whole point is pages that run from a plain HTTP server | pending — flagged in the apply-mode summary, 2026-08-27 |
 | §6.11 shared chrome | The app header has no Sign out control | The demo has no auth — there is no session to sign out of | recorded here, 2026-08-27 |
+
+## Demo data rules
+
+Site data uses US and UK sites only — never Indian sites or data (owner rule, 2026-08-27). Current roster: Mass General · Boston, Dell Medical · Austin, St James's · Leeds, Northwestern · Chicago.
