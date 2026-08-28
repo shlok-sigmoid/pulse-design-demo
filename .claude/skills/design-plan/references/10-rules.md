@@ -14,9 +14,9 @@
 - Treat "done" as gated: drive the §13.3 state matrix on the real screen, then get the §13 reviewer's explicit confirmation — zero known failures is the shipping bar.
 
 **Don't**
-- **Never introduce red.** Danger is magenta (`neg #a21caf` / `#b4276e`), warning is gold — stay in the family.
+- **Never introduce red — and never magenta** (v1.9). Danger is burnt orange (`neg #bb3e0b` / `#9a3412`), warning is gold.
 - **Don't paint action buttons with `neg`** (v1.7). Destructive confirms wear the primary `bg-brand-gradient` recipe behind a §6.6 confirm dialog; `neg` marks status — pills, deltas, failed states — never a button.
-- **Don't paint form errors or inline alerts with `neg`** (v1.8). Invalid fields wear `warn` gold — `border-warn/50` on the control, a gold error line with a human reason (§6.7). Magenta stays a data-status color (pills, deltas, chart encodings), never feedback chrome.
+- **Don't paint form errors or inline alerts with `neg`** (v1.8). Invalid fields wear `warn` gold — `border-warn/50` on the control, a gold error line with a human reason (§6.7). Burnt orange stays a data-status color (pills, deltas, chart encodings), never feedback chrome.
 - Don't revert marquee serif headings to sans, and don't let the serif leak into body/UI copy.
 - Don't use the old palette (`#0093d0`, `#2bb8ff`, `#7c3aed`) — dead, save one legacy literal in `VarianceWaterfall.tsx`.
 - Don't use the `pink` Pill tone (deprecated alias of `blue`) or grey skeleton loaders or raw spinners on analyst surfaces.

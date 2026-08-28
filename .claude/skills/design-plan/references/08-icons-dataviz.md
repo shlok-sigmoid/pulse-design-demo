@@ -16,7 +16,7 @@ Inline 32×32 SVG, monochrome line-art in `currentColor` at strokeWidth 1.6 — 
 | Encoding | Color |
 |---|---|
 | Ahead / positive | `pos #0f8a5f` (AA-darker `#0a6b49` on tinted fills) |
-| Behind / negative | magenta `#a21caf` — **never red** |
+| Behind / negative | burnt orange `#bb3e0b` — **never red, never magenta** |
 | Captured / strong / favorable | bright blue `#0187FA` |
 | Partial / stall / watch-out | deep blue `#0101C9` |
 | Missing | grey `#8a99ab` (track `rgba(11,33,56,0.07)`) |
