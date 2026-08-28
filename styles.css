@@ -1,4 +1,4 @@
-/* Pulse — design system v1.7 (tokens + primitives + app styles) */
+/* Pulse — design system v1.8 (tokens + primitives + app styles) */
 
 :root {
   --ink-950: #DBE6FA;
@@ -502,7 +502,7 @@ h1 {
   outline: none;
   box-shadow: 0 0 0 2px rgba(1,135,250,0.25);
 }
-.input.invalid { border-color: rgba(162,28,175,0.5); }
+.input.invalid { border-color: rgba(183,121,31,0.5); }
 select.input { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--fg-muted) 50%), linear-gradient(135deg, var(--fg-muted) 50%, transparent 50%); background-position: calc(100% - 19px) 50%, calc(100% - 14px) 50%; background-size: 5px 5px; background-repeat: no-repeat; }
 
 /* Empty state (§6.8) */
@@ -706,7 +706,7 @@ select.input { appearance: none; background-image: linear-gradient(45deg, transp
   gap: 6px;
   margin-top: 6px;
   font-size: 12px;
-  color: var(--neg);
+  color: var(--warn);
 }
 .field-error svg { width: 14px; height: 14px; flex-shrink: 0; }
 

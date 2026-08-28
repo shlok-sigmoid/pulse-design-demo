@@ -1,11 +1,11 @@
 ---
 name: design-plan
-description: The organization's canonical frontend design system (v1.7, bundled split per section under references/) — colors, typography, surfaces, component recipes, motion, voice, content-density rules, and a mandatory review gate. Use this skill whenever building, styling, restyling, reviewing, or fixing ANY frontend UI — a screen, page, component, modal, dashboard, form, landing page, chart, or empty state — in any project, even if the user never says "design system" or "design.md". Also use it when starting a new frontend project (it bootstraps the whole system) and when deciding whether UI work is "done" (it defines the review gate that gates done).
+description: The organization's canonical frontend design system (v1.8, bundled split per section under references/) — colors, typography, surfaces, component recipes, motion, voice, content-density rules, and a mandatory review gate. Use this skill whenever building, styling, restyling, reviewing, or fixing ANY frontend UI — a screen, page, component, modal, dashboard, form, landing page, chart, or empty state — in any project, even if the user never says "design system" or "design.md". Also use it when starting a new frontend project (it bootstraps the whole system) and when deciding whether UI work is "done" (it defines the review gate that gates done).
 ---
 
 # Design Plan — the canonical design system
 
-Every visual decision derives from the bundled design document (v1.7), which ships split into one file per section under `references/` — `00-index.md` maps what lives where. It travels as law, not inspiration: when this skill is active, **all UI designs from that document by default and nothing is skipped — no exceptions.** A screen that ignores a section of the document is a defect, not a variation. The bundled copy is the authority this skill enforces, everywhere it runs. The split exists for token economy: read only the section files the task needs, never the whole set out of habit.
+Every visual decision derives from the bundled design document (v1.8), which ships split into one file per section under `references/` — `00-index.md` maps what lives where. It travels as law, not inspiration: when this skill is active, **all UI designs from that document by default and nothing is skipped — no exceptions.** A screen that ignores a section of the document is a defect, not a variation. The bundled copy is the authority this skill enforces, everywhere it runs. The split exists for token economy: read only the section files the task needs, never the whole set out of habit.
 
 ## On direct invocation (`/design-plan` with no task)
 
