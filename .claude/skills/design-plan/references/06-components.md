@@ -60,6 +60,8 @@ Micro-badge `rounded-md bg-fg/5 px-1.5 py-0.5 font-mono text-2xs`; gradient micr
 
 White fill, `rounded-xl`/`rounded-2xl`, focus = `focus:border-brand-blue/50 focus:outline-none focus:ring-2 focus:ring-brand-blue/25`. Canonical input: `w-full rounded-xl border border-line bg-white px-3.5 py-3 text-sm text-fg placeholder:text-fg-faint …`; textarea adds `resize-y rounded-2xl px-4 leading-relaxed shadow-card`. In-edit fields wear a visible blue border (`border-brand-blue/35 bg-white/85`).
 
+**Invalid fields (v1.8):** an invalid control wears a gold border (`border-warn/50`) and its error line renders in `warn` gold — a 14px icon plus one human sentence (`text-warn`, 12px), e.g. "Email is required — notifications can't send without it." Never `neg`: magenta/pink is reserved for data status (behind/negative encodings, §2.8), not form errors or inline alerts.
+
 ### 6.8 Loading & empty states
 
 - **SectionLoader** replaces grey skeletons: `rounded-3xl border border-line bg-white/70 … shadow-card backdrop-blur-sm` frame; a rotating (1s linear) `.orbit-ring` conic comet (`rgba(1,135,250,0)→#0187FA→#0101C9`, masked to ~3px) with a glow head dot `bg-[#0187FA] shadow-[0_0_10px_2px_rgba(1,135,250,0.75)]`; `role="status" aria-live="polite"`.
