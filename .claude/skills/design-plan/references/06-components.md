@@ -41,7 +41,7 @@ The base container for all plan content. `motion.section` with `card iris-futuri
 | **Secondary** | `rounded-xl border border-line bg-white px-4 py-2.5 text-[13px] font-semibold text-fg-muted shadow-card transition hover:text-fg` (or `hover:border-brand-blue/40`) |
 | **Tinted secondary (blue)** | `rounded-lg/xl border border-brand-blue/30–40 bg-brand-blue/[0.06] px-3–5 py-1.5–2.5 text-xs–sm font-semibold text-brand-blue transition hover:bg-brand-blue/10` — secondary actions that belong to Iris/AI features (LE template upload, WhyCard, GrillSession, ChapterCompletionBar…); chip-sized variants drop to `border-brand-blue/20 px-2 py-0.5 text-2xs`. Disabled grammar everywhere: `disabled:cursor-not-allowed disabled:opacity-40` (13×) |
 | **Ghost** | `rounded-lg border border-line px-3.5 py-2 text-sm font-medium text-fg-muted transition hover:border-brand-blue/40 hover:text-fg`; destructive triggers keep this standard treatment — no `neg` tint (v1.7); close: `rounded-lg p-2 text-fg-faint hover:bg-fg/[0.05] hover:text-fg` |
-| **Destructive confirm (v1.7)** | delete/remove/destroy confirms wear the standard primary recipe — `bg-brand-gradient` + `text-white` + `shadow-glow` — always behind a §6.6 confirm dialog, which is the guardrail. Never a magenta/`neg`-tinted button: `neg` marks status (pills, deltas, failed states), it does not paint action buttons |
+| **Destructive confirm (v1.7)** | delete/remove/destroy confirms wear the standard primary recipe — `bg-brand-gradient` + `text-white` + `shadow-glow` — always behind a §6.6 confirm dialog, which is the guardrail. Never a burnt-orange/`neg`-tinted button: `neg` marks status (pills, deltas, failed states), it does not paint action buttons |
 | **Icon tiles** | square `bg-brand-gradient text-white shadow-glow` at h-6/7/9/11/12, `rounded-lg`→`rounded-2xl` by size; send button adds `hover:brightness-110 disabled:opacity-40 disabled:shadow-none` |
 | **FAB (Ask Iris)** | `iris-futuristic fixed bottom-6 right-6 z-50 h-14 w-14 rounded-2xl bg-brand-gradient text-white shadow-glow hover:-translate-y-0.5` with `AiMascot h-7 w-7` + one-shot `.iris-hail` halo |
 
@@ -60,7 +60,7 @@ Micro-badge `rounded-md bg-fg/5 px-1.5 py-0.5 font-mono text-2xs`; gradient micr
 
 White fill, `rounded-xl`/`rounded-2xl`, focus = `focus:border-brand-blue/50 focus:outline-none focus:ring-2 focus:ring-brand-blue/25`. Canonical input: `w-full rounded-xl border border-line bg-white px-3.5 py-3 text-sm text-fg placeholder:text-fg-faint …`; textarea adds `resize-y rounded-2xl px-4 leading-relaxed shadow-card`. In-edit fields wear a visible blue border (`border-brand-blue/35 bg-white/85`).
 
-**Invalid fields (v1.8):** an invalid control wears a gold border (`border-warn/50`) and its error line renders in `warn` gold — a 14px icon plus one human sentence (`text-warn`, 12px), e.g. "Email is required — notifications can't send without it." Never `neg`: magenta/pink is reserved for data status (behind/negative encodings, §2.8), not form errors or inline alerts.
+**Invalid fields (v1.8):** an invalid control wears a gold border (`border-warn/50`) and its error line renders in `warn` gold — a 14px icon plus one human sentence (`text-warn`, 12px), e.g. "Email is required — notifications can't send without it." Never `neg`: burnt orange is reserved for data status (behind/negative encodings, §2.8), not form errors or inline alerts.
 
 ### 6.8 Loading & empty states
 
