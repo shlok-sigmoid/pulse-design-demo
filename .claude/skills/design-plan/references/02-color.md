@@ -40,7 +40,7 @@ Only two distinct brand hexes exist in the app shell: `#0187FA` and `#0101C9`. T
 | Token | Hex | Meaning |
 |---|---|---|
 | `pos` | `#0f8a5f` | success / positive / ahead |
-| `neg` | `#a21caf` | negative / danger — **magenta, never red** |
+| `neg` | `#bb3e0b` | negative / danger — **burnt orange; never red, never magenta** |
 | `warn` | `#b7791f` | warning / needs review |
 | `info` | `#0b76c4` | informational / evidence |
 
@@ -77,7 +77,7 @@ Only two distinct brand hexes exist in the app shell: `#0187FA` and `#0101C9`. T
 | `#8a5a12` | AA gold ink (on washes `#f9f3eb` / `#f6efdf`, hairline `#e9d7bc`) |
 | `#c9891f` | bright gold — risk cap gradient `from-[#c9891f] to-[#8a5a12]` |
 | `#866017` | cited-slide gold marker (SourceInspector) |
-| `#b4276e` | deep danger magenta (Executive Lens / decision ledger) — still not red |
+| `#9a3412` | deep danger burnt orange (Executive Lens / decision ledger) — still not red, not magenta |
 | `#14171c #9aa2ad #e7e9ee #d0d5dd` | SourceInspector drawer neutral micro-palette (drawer chrome only) |
 | `#f6f7f9` | analyst-room canvas (Executive Lens + Risks & Opportunities only) — overrides the blue `surface-light` body wash |
 
@@ -88,7 +88,7 @@ Only two distinct brand hexes exist in the app shell: `#0187FA` and `#0101C9`. T
 | Primary action / active | `bg-brand-gradient` + `text-white` + `shadow-glow` |
 | AI / Iris | brand blue-purple family; header gradient `linear-gradient(120deg, #0b76c4 0%, #0187FA 35%, #0101C9 100%)` |
 | Success / completed | `pos`, `bg-gradient-green`, ink `#0b7a52` |
-| Danger / rejected | magenta `neg #a21caf` (Pills) / `#b4276e` (lens surfaces) — **never red** |
+| Danger / rejected | burnt orange `neg #bb3e0b` (Pills) / `#9a3412` (lens surfaces) — **never red, never magenta** |
 | Warning / risk | `warn #b7791f`; small-text ink `#8a5a12`; cap `#c9891f→#8a5a12` |
 | Info / evidence | `info #0b76c4` |
 | Structural status (not good/bad) | bright blue `#0187FA` = captured/strong; deep blue `#0101C9` = partial/stall; grey `#8a99ab` = missing |
